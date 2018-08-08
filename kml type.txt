@@ -1,0 +1,194 @@
+from lxml import etree
+from pykml.factory import KML_ElementMaker as KML
+from pykml.factory import ATOM_ElementMaker as ATOM
+from pykml.factory import GX_ElementMaker as GX
+
+doc = KML.kml(
+  KML.Document(
+    KML.name('type.kml'),
+    KML.Style(
+      KML.IconStyle(
+        KML.scale('1.3'),
+        KML.Icon(
+          KML.href('http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png'),
+        ),
+        KML.hotSpot(  x="20",
+  y="2",
+  xunits="pixels",
+  yunits="pixels",
+),
+      ),
+      id="s_ylw-pushpin_hl",
+    ),
+    KML.StyleMap(
+      KML.Pair(
+        KML.key('normal'),
+        KML.styleUrl('#s_ylw-pushpin0'),
+      ),
+      KML.Pair(
+        KML.key('highlight'),
+        KML.styleUrl('#s_ylw-pushpin_hl0'),
+      ),
+      id="m_ylw-pushpin",
+    ),
+    KML.Style(
+      KML.IconStyle(
+        KML.scale('1.1'),
+        KML.Icon(
+          KML.href('http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png'),
+        ),
+        KML.hotSpot(  x="20",
+  y="2",
+  xunits="pixels",
+  yunits="pixels",
+),
+      ),
+      id="s_ylw-pushpin",
+    ),
+    KML.Style(
+      KML.IconStyle(
+        KML.scale('1.1'),
+        KML.Icon(
+          KML.href('http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png'),
+        ),
+        KML.hotSpot(  x="20",
+  y="2",
+  xunits="pixels",
+  yunits="pixels",
+),
+      ),
+      KML.LineStyle(
+        KML.color('ff00ffff'),
+        KML.width('2'),
+      ),
+      id="sn_ylw-pushpin",
+    ),
+    KML.StyleMap(
+      KML.Pair(
+        KML.key('normal'),
+        KML.styleUrl('#s_ylw-pushpin'),
+      ),
+      KML.Pair(
+        KML.key('highlight'),
+        KML.styleUrl('#s_ylw-pushpin_hl'),
+      ),
+      id="m_ylw-pushpin0",
+    ),
+    KML.Style(
+      KML.IconStyle(
+        KML.scale('1.3'),
+        KML.Icon(
+          KML.href('http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png'),
+        ),
+        KML.hotSpot(  x="20",
+  y="2",
+  xunits="pixels",
+  yunits="pixels",
+),
+      ),
+      KML.LineStyle(
+        KML.color('ff00ffff'),
+        KML.width('2'),
+      ),
+      id="sh_ylw-pushpin",
+    ),
+    KML.Style(
+      KML.IconStyle(
+        KML.scale('1.1'),
+        KML.Icon(
+          KML.href('http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png'),
+        ),
+        KML.hotSpot(  x="20",
+  y="2",
+  xunits="pixels",
+  yunits="pixels",
+),
+      ),
+      id="s_ylw-pushpin0",
+    ),
+    KML.StyleMap(
+      KML.Pair(
+        KML.key('normal'),
+        KML.styleUrl('#sn_ylw-pushpin'),
+      ),
+      KML.Pair(
+        KML.key('highlight'),
+        KML.styleUrl('#sh_ylw-pushpin'),
+      ),
+      id="msn_ylw-pushpin",
+    ),
+    KML.Style(
+      KML.IconStyle(
+        KML.scale('1.3'),
+        KML.Icon(
+          KML.href('http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png'),
+        ),
+        KML.hotSpot(  x="20",
+  y="2",
+  xunits="pixels",
+  yunits="pixels",
+),
+      ),
+      id="s_ylw-pushpin_hl0",
+    ),
+    KML.Folder(
+      KML.name('type'),
+      KML.open('1'),
+      KML.Placemark(
+        KML.name('1'),
+        KML.LookAt(
+          KML.longitude('8.491127090662566'),
+          KML.latitude('49.92917721758351'),
+          KML.altitude('0'),
+          KML.heading('-59.99906604296586'),
+          KML.tilt('8.375325018842069'),
+          KML.range('2021.149675956891'),
+          GX.altitudeMode('relativeToSeaFloor'),
+        ),
+        KML.styleUrl('#m_ylw-pushpin0'),
+        KML.Point(
+          GX.drawOrder('1'),
+          KML.coordinates('8.49053342360609,49.93026696845406,0'),
+        ),
+      ),
+      KML.Placemark(
+        KML.name('2'),
+        KML.LookAt(
+          KML.longitude('8.490487301579272'),
+          KML.latitude('49.93112403019315'),
+          KML.altitude('0'),
+          KML.heading('-59.99946241175223'),
+          KML.tilt('12.04129234788896'),
+          KML.range('1311.527703114715'),
+          GX.altitudeMode('relativeToSeaFloor'),
+        ),
+        KML.styleUrl('#m_ylw-pushpin0'),
+        KML.Point(
+          GX.drawOrder('1'),
+          KML.coordinates('8.488453849456308,49.93123107960418,0'),
+        ),
+      ),
+      KML.Placemark(
+        KML.name('1'),
+        KML.styleUrl('#m_ylw-pushpin'),
+        KML.LineString(
+          KML.tessellate('1'),
+          KML.coordinates(
+     '8.4882700805196,49.93118448915558,0 8.486354338966226,49.93222118207677,0 8.485260800027167,49.9330221313312,0 8.484355845101771,49.9335526065513,0 8.483496959351967,49.93425097493164,0 8.48538314394856,49.9338237399523,0 8.487754346962419,49.9331469296943,0 8.487800238255405,49.93312984469089,0 8.487868972543946,49.93310425534563,0 8.489801109943361,49.93253351833264,0 '
+          ),
+        ),
+      ),
+      KML.Placemark(
+        KML.name(u'\u672a\u547d\u540d\u8def\u5f84'),
+        KML.styleUrl('#msn_ylw-pushpin'),
+        KML.LineString(
+          KML.tessellate('1'),
+          KML.coordinates(
+     '8.487667242688126,49.9295570147341,0 8.487741189601518,49.92952335238891,0 8.487849346980312,49.92948956656005,0 8.490172990288539,49.93013619993703,0 8.490220193743722,49.930151859646,0 8.491420131878218,49.93176761836278,0 8.490941069462162,49.93270595412083,0 '
+          ),
+        ),
+      ),
+    ),
+  ),
+)
+print etree.tostring(etree.ElementTree(doc),pretty_print=True)
